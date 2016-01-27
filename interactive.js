@@ -1,5 +1,5 @@
 var language = "turkish";
-var word = "year";
+var word = "merry and fish new happy year";
 
 switch(language) {
   case "french":
