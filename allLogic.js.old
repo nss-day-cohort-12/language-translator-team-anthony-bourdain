@@ -1,0 +1,21 @@
+var AllLogic = (function() { // allLogic is in public scope
+
+  return {
+
+    english: function(inputText){
+      inputTextArray = inputText.slice(" "); // create array from string
+      var lexicon = { "merry": "MERRY",
+                      "christmas": "CHRISTMAS",
+                      "and": "AND",
+                      "happy": "HAPPY",
+                      "new": "NEW",
+                      "year": "YEAR" };
+      var outputString;
+      inputTextArray.forEach = function(currentWord) {
+        outputString += lexicon(currentWord) + " ";
+      };
+    } // end function english
+
+  } // end return
+
+}(); // end var allLogic = function
