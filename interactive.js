@@ -1,5 +1,5 @@
-var language = "french";
-var word = "christmas";
+var language = "turkish";
+var word = "year";
 
 switch(language) {
   case "french":
@@ -10,6 +10,9 @@ switch(language) {
     break;
   case "japanese":
     document.getElementById("outputField").innerHTML += Translate.japanese(word);
+    break;
+  case "turkish":
+    document.getElementById("outputField").innerHTML += Translate.turkish(word);
     break;
   default:
     document.getElementById("outputField").innerHTML += "Sorry, I don't know that language.";
