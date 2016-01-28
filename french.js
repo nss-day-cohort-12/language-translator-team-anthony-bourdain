@@ -3,12 +3,12 @@
 // group project
 
 var Translate = (function(oldTranslate) {
-  var lexicon =   { merry: "joyeaux",
-                    christmas: "Noel",
-                    and: "et",
-                    happy: "bonne",
-                    new: "nouvelle",
-                    year: "annee" };
+  var lexicon =   { "merry" : "joyeaux",
+                    "christmas" : "Noel",
+                    "and" : "et",
+                    "happy" : "bonne",
+                    "new" : "nouvelle",
+                    "year" : "annee" };
 
   // create new k:v pair in oldTranslate
   oldTranslate.french = function(inputText) {
