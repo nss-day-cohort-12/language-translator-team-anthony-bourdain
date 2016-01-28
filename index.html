@@ -1,28 +1,41 @@
 <!doctype HTML>
+<html>
 <head>
+  <link rel="stylesheet" href="translatorstyles.css">
 </head>
 <body>
 
   	<form id="languageForm" action="">
-  		<label id="textInputBox" for="">
-  			<input  id="wordInput" type="text">
-  		</label>
-  		<label for="">
-  			<button id="translateButton">Translate</button>
-  		</label>
-  		<label id="languageTypeButton" for="">
-	  		<input id="frenchButton" type="radio" name="languageType" value="French" checked>French
-	  		<input id="germanButton" type="radio" name="languageType" value="German">German
-	  		<input id="turkishButton" type="radio" name="languageType" value="Turkish">Turkish
-	  		<input id="japaneseButton" type="radio" name="languageType" value="Japanese">Japanese
-	  	</label>
+  		<div>
+        <h1 class="babel-logo">Babel<em class="bish-text">Bish</em></h1>  
+      </div>
+      <div class="wordInput">
+        <label id="textInputBox" for="">
+    			<input  id="wordInput" type="text">
+    		</label>
+      </div>
+      <div class="languageList">  
+        <label id="languageTypeButton" for="" class="language-list-buttons">
+          <input id="frenchButton" type="radio" name="languageType" value="French" checked>French
+          <input id="germanButton" type="radio" name="languageType" value="German">German
+          <input id="turkishButton" type="radio" name="languageType" value="Turkish">Turkish
+          <input id="japaneseButton" type="radio" name="languageType" value="Japanese">Japanese
+        </label>
+      </div>
+  		<div class="translateButton">
+        <label for="">
+    			<button id="translateButton">Translate</button>
+    		</label>
+      </div>
+      <div id="outputField" class="outputField">
+      </div>
   	</form>
 
   	<div id="inputField">
   		
   	</div>
 
-	<div id="outputField">
+	<div id="outputField" class="outputField">
 	</div>
 
 	
