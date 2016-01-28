@@ -1,0 +1,51 @@
+* {box-sizing: border-box}
+
+body {
+	margin: 0;
+	background-image: url("http://f.fwallpapers.com/images/osaka-cityscape-japan.jpg");
+	background-size: 110%;
+	background-repeat: no-repeat;
+}
+
+#languageForm {
+	max-width: 600px;
+	height: 400px;
+	border: 7px solid #333;
+	background: teal;
+	opacity: .9;
+	margin: 100px auto;
+	box-shadow: 5px 10px 5px #211;
+}
+
+.wordInput, .languageList, .translateButton, .babel-logo, .outputField {
+	text-align: center;
+	margin: auto auto;
+}
+
+.babel-logo {
+	font-size: 6em;
+	margin-top: 60px;
+}
+
+.bish-text {
+	color: orange;
+	padding-left: 1px;
+}
+
+.wordInput {
+	margin-top: 30px;
+}
+
+.languageList {
+	margin-top: 15px;
+}
+
+.translateButton {
+	margin-top: 25px;
+}
+
+.outputField {
+	font-size: 2em;
+	margin-top: 10px;
+	color: orange;
+}
