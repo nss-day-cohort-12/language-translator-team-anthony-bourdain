@@ -63,8 +63,7 @@ translateButton.addEventListener("click", displayTranslation);
 translateButton.addEventListener("keydown", function(e) {
   if (e.keycode === 13 && wordBox === document.activeElement) {
     e.preventDefault();
-    // languageClick();
-    // inputField.innerHTML = wordBox.value;
+    inputField.innerHTML = wordBox.value;
     console.log("enter");
   }
 })
