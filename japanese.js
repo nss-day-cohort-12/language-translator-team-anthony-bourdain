@@ -7,7 +7,7 @@ var Translate = (function(japaneseTranslate) {
 							year: "wo"
 						};
 	
-  japaneseTranslate.translateToJapanese = function(inputreference) {
+  japaneseTranslate.japanese = function(inputText) {
     inputTextArray = inputText.split(" ");  // convert string into array of individual words
     var outputString = "";  // initialize blank string
     inputTextArray.forEach(function(currentWord) {
