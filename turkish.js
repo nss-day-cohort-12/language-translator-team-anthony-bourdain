@@ -1,17 +1,17 @@
-// module to augment allLogic class with additional method
+// module to augment Translate class with additional method
 // 27 Jan 2016
 // group project
 
 var Translate = (function(oldTranslate) {
-  var lexicon =   { merry: "joyeaux",
-                    christmas: "Noel",
-                    and: "et",
-                    happy: "bonne",
-                    new: "nouvelle",
-                    year: "annee" };
+  var lexicon =   { merry: "mutlu",
+                    christmas: "Noeller",
+                    and: "ve",
+                    happy: "mutlu",
+                    new: "yeni",
+                    year: "yillar" };
 
   // create new k:v pair in oldTranslate
-  oldTranslate.french = function(inputText) {
+  oldTranslate.turkish = function(inputText) {
     inputTextArray = inputText.split(" ");  // convert string into array of individual words
     var outputString = "";  // initialize blank string
     inputTextArray.forEach(function(currentWord) {

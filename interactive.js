@@ -1,3 +1,4 @@
+
 // gather text input value and place in 'word' variable.
 var wordBox = document.getElementById("wordInput");
 
