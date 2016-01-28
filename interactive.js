@@ -46,25 +46,6 @@ function languageClick () {
 
 function displayTranslation (e) {
   e.preventDefault();
-  outputText.innerHTML = "";
   console.log("translating to",language);
-  switch(language) {
-    case "French":
-      outputText.innerHTML += Translate.french(wordBox.value);
-      console.log("French");
-      break;
-    case "German":
-      outputText.innerHTML += Translate.german(wordBox.value);
-      console.log("German");
-      break;
-    case "Turkish":
-      outputText.innerHTML += Translate.turkish(wordBox.value);
-      break;
-    case "Japanese":
-      outputText.innerHTML += Translate.japanese(wordBox.value);
-      break;
-    default:
-      outputText.innerHTML += "Sorry, I don't know that language.";
-      break;
-  };
+  outputText.innerHTML = Translate[language.toLowerCase()](wordBox.value);  // eliminates switch statement!
 }
