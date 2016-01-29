@@ -1,6 +1,10 @@
-// GLOBAL VARIABLES //
+// VARIABLES IN GLOBAL SCOPE //
 var language;
+var Translate = (function() { // IIFE initializes object for methods in public scope
+  return { }                  // "Translate" begins as object with zero k:v pairs
+})();
 //////////////////////
+
 
 // DOM REFERENCES //
 var outputText = document.getElementById("outputField");
@@ -13,36 +17,35 @@ var translateButton = document.getElementById("translateButton");
 var wordBox = document.getElementById("wordInput");
 ///////////////////
 
+
 // EVENT HANDLERS //
+// radio buttons//
 frenchClick.addEventListener("click", languageClick);
 germanClick.addEventListener("click", languageClick);
 turkishClick.addEventListener("click", languageClick);
 japaneseClick.addEventListener("click", languageClick);
 
-// wordBox.addEventListener("keyup", function() {
-//   inputField.innerHTML = wordBox.value;
-// });
-
+// "translate" button
 translateButton.addEventListener("click", displayTranslation);
-translateButton.addEventListener("keydown", function(e) {
-  if (e.keycode === 13 && wordBox === document.activeElement) {
-    e.preventDefault();
-    inputField.innerHTML = wordBox.value;
-    console.log("enter");
-  }
-})
+
 ////////////////////
+
+
+// MAIN: EXECUTE ON PAGE LOAD //
 
 languageClick(); // initialize "language" variable according to radio button defaults
 
-function languageClick () {
+///////////////////////////////
+
+
+function languageClick () { // loop through radio buttons to identify which is checked
   for (var i = 0; i < languageType.length; i++) {
     if (languageType[i].checked) {
       language = languageType[i].value;
       console.log("selected",language);
     }
   }
-};
+}
 
 function displayTranslation (e) {
   e.preventDefault();

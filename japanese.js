@@ -1,3 +1,7 @@
+// module to augment Translate class with additional method
+// 27 Jan 2016
+// group project
+
 var Translate = (function(japaneseTranslate) {
 	var englishlexicon = { merry: "merry",
 							christmas: "christmas",

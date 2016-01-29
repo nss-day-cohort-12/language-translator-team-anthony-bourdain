@@ -8,7 +8,7 @@ var Translate = (function(oldTranslate) {
                     and: "ve",
                     happy: "mutlu",
                     new: "yeni",
-                    year: "yillar" };
+                    year: "yIllar" };
 
   // create new k:v pair in oldTranslate
   oldTranslate.turkish = function(inputText) {

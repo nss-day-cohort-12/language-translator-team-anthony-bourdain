@@ -1,4 +1,4 @@
-// module to augment allLogic class with additional method
+// module to augment Translate class with additional method
 // 27 Jan 2016
 // group project
 
